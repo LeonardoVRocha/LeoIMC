@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    font-family: 'Dancing Script';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #ff8800, #88ff55);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 20px;
+    height: 600px;
+    border: 20px;
+}
+
+.box-left {
+    width: 100%;
+    margin-right: 50px;
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+.box-left h1 {
+    font-size: 4rem;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.box-left input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+    outline: none;
+    background-color: #fef1e4;
+}
+
+.box-left button {
+    background-color: #ff8800;
+    color: aliceblue;
+    padding: 8px 20px;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    animation: gra 2s reverse ease-in-out infinite;
+    cursor: pointer;
+}
+
+.box-right {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.box-right .img {
+    width: 100%;
+}
+
+.box-right p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+    .box{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-right .img{
+        width: 90%;
+        margin: 10px;
+    }
+
+    .box-right p {
+        margin: 20px 30px;
+    }
+
+    .box-left h1 {
+        margin: 20px 0;
+    }
+
+    .box-left input {
+        width: 100%;
+    }
+
+    .box-left {
+        padding: 0 20px;
+        margin: 0 20px;
+    }
+}
+
+@keyframes gra {
+    0% {
+      background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ff670f), color-stop(21%, #ff670f), color-stop(56%, #ffffff), color-stop(88%, #ead40e));
+      background: -webkit-linear-gradient(-45deg, #ff670f 0%, #ff670f 21%, #ffffff 56%, #ead40e 88%);
+      background: linear-gradient(135deg, #ff670f 0%, #ff670f 21%, #ffffff 56%, #ead40e 88%);
+    }
+    50% {
+      background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ff670f), color-stop(10%, #ff670f), color-stop(40%, #ffffff), color-stop(60%, #ead40e));
+      background: -webkit-linear-gradient(-45deg, #ff670f 0%, #ff670f 10%, #ffffff 40%, #ead40e 60%);
+      background: linear-gradient(135deg, #ff670f 0%, #ff670f 10%, #ffffff 40%, #ead40e 60%);
+    }
+    100% {
+      background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ff670f), color-stop(5%, #ff670f), color-stop(10%, #ffffff), color-stop(40%, #ead40e));
+      background: -webkit-linear-gradient(-45deg, #ff670f 0%, #ff670f 5%, #ffffff 10%, #ead40e 40%);
+      background: linear-gradient(135deg, #ff670f 0%, #ff670f 5%, #ffffff 10%, #ead40e 40%);
+    }
+  }
